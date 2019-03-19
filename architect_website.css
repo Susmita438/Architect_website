@@ -12,6 +12,7 @@ box-sizing: border-box;
    position:relative;
 }
 .header{
+   /*position: fixed;*/
    background-color:white;
    padding: 8px;
    width: 100%;
@@ -68,7 +69,7 @@ box-sizing: border-box;
 .body-reports-img{
    float: left;
    width:25%;
-   padding: 30px;
+   padding:8px;
 }
 .body-content{
     font-family: Verdana,sans-serif;
@@ -88,10 +89,10 @@ box-sizing: border-box;
    padding-bottom: 26px;         
 }
 .body-about-image .card{
-float: left;
-width: 25%;
-font-family: Verdana,sans-serif;
-padding:30px;
+  float: left;
+  width: 25%;
+  font-family: Verdana,sans-serif;
+  padding:8px;
 }
 .body-about-image .card img {
    width:100%;
@@ -120,13 +121,13 @@ padding:30px;
    border: none;
 }
 .body-bottom-image{
-   height: 100%;
-   width: 100%;
+   height:100%;
+   width:100%;
 }
 .body-contact-form{
- font-family: Verdana,sans-serif;
-    text-align: justify;
-     padding: 35px 30px;
+   font-family: Verdana,sans-serif;
+   text-align: justify;
+   padding: 35px 30px;
 }
 .form-control{
    font-family: Verdana,sans-serif;
@@ -144,7 +145,7 @@ padding:30px;
    color:white;
    border: none;
    font-family: Verdana,sans-serif;
-   width:12%;
+   width:15%;
 }
 .footer{
    /*position:absolute;*/
@@ -163,3 +164,46 @@ padding:30px;
 .footer a:hover{
    color:green;
 }
+@media (max-width:500px) {
+  .body-reports-img{
+    width: 100%;
+  }
+  .body-about-image .card{
+    width: 100%;
+ }
+ .body-contact-form .submit input{
+   width:40%;
+ }
+}
+@media (min-width: 768px) {
+  .body-reports-img{
+   width:50%;
+  }
+ .body-about-image .card{
+    width:50%;
+ }
+ .body-contact-form .submit input{
+   width:20%;
+}
+}
+@media (min-width:1024px) {
+  .body-reports-img{
+   width:25%;
+  }
+ .body-about-image .card{
+    width:25%;
+ }
+ .body-contact-form .submit input{
+   width:20%;
+}
+}
+@media (max-width:767px) {
+ .navigation-bar ul{
+   text-align:center;
+   float: none;
+}
+.navigation-bar{
+   text-align:center;
+   float: none;
+ }
+} 
